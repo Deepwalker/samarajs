@@ -16,6 +16,8 @@
 
 * {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 html, body {
@@ -290,8 +292,8 @@ ul {
 .footer {
     text-align: right;
     position: absolute;
-    right: 5%;
-    left: 0;
+    right: 10%;
+    left: 10%;
     bottom: 55px;
 }
 
@@ -324,7 +326,7 @@ ul {
 .icon-vk-footer:before, .icon-vk-footer:after {
     content: "";
     position: absolute;
-    top: -2px;
+    top: -4px;
     left: 0;
     width: 30px;
     height: 17px;
@@ -358,7 +360,7 @@ ul {
 .icon-fb-footer:before, .icon-fb-footer:after {
     content: "";
     position: absolute;
-    top: -5px;
+    top: -7px;
     left: 0;
     width: 21px;
     height: 21px;
@@ -476,6 +478,10 @@ ul {
     .header-primary-menu li {
         margin-left: 100px;
     }
+    .footer{
+        left: 7%;
+        right: 7%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -496,6 +502,10 @@ ul {
     }
     .wrapper {
         padding: 25px 6% 0;
+    }
+    .footer{
+        right: 6%;
+        left: 6%;
     }
     .header-primary-menu li {
         display: block;
@@ -556,7 +566,7 @@ ul {
         padding-left: 25px;
     }
     .icon-fb-footer:before, .icon-fb-footer:after {
-        top: -4px;
+        top: -5px;
         width: 15px;
         height: 15px;
     }
