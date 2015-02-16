@@ -46,7 +46,7 @@ a {
 }
 
 
-a:hover, a:active, a a:focus {
+a:hover, a:active, a:focus {
     text-decoration: none;
     color: #316df3;
 }
@@ -66,6 +66,10 @@ ul {
 
 .pull-right {
     float: right;
+}
+
+.font-medium {
+    font-family: "HelveticaNeueCyrMedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
@@ -95,7 +99,6 @@ ul {
     -webkit-align-items: center;
 }
 
-
 .header-primary-menu li {
     display: inline-block;
     vertical-align: middle;
@@ -106,16 +109,13 @@ ul {
     transition: 0.15s linear margin-right;
 }
 
-
 .header-primary-menu li.size-sm {
     font-size: 0.8em;
 }
 
-
 .header-primary-menu li:first-child {
     margin-left: 0;
 }
-
 
 .header-secondary-menu li {
     display: inline-block;
@@ -125,11 +125,9 @@ ul {
     white-space: nowrap;
 }
 
-
 .header-secondary-menu li:first-child {
     margin-left: 0;
 }
-
 
 .cloud-cafe-logo {
     display: block;
@@ -139,7 +137,6 @@ ul {
     height: 114px;
     position: relative;
 }
-
 
 .cloud-cafe-logo:before, .cloud-cafe-logo:after {
     content: "";
@@ -152,34 +149,28 @@ ul {
     transition: 0.15s linear opacity;
 }
 
-
 .cloud-cafe-logo:before {
     opacity: 1;
     background: url("samara_js_images/cloud-cafe-logo.png") no-repeat 0 0;
 }
-
 
 .cloud-cafe-logo:after {
     opacity: 0;
     background: url("samara_js_images/cloud-cafe-logo-hover.png") no-repeat 0 0;
 }
 
-
 .cloud-cafe-logo:hover:before, .cloud-cafe-logo:active:before, .cloud-cafe-logo:focus:before {
     opacity: 0;
 }
-
 
 .cloud-cafe-logo:hover:after, .cloud-cafe-logo:active:after, .cloud-cafe-logo:focus:after {
     opacity: 1;
 }
 
-
 .page-title-wrapper {
     text-align: center;
-    padding: 95px 0px;
+    padding: 65px 0 95px;
 }
-
 
 .page-title {
     margin: 0 0 0 -160px;
@@ -190,7 +181,6 @@ ul {
     text-align: left;
 }
 
-
 .page-title .bottom-part {
     display: block;
     margin-top: -0.9em;
@@ -198,11 +188,9 @@ ul {
     color: #f580b7;
 }
 
-
 .reports-list {
     margin: 0 0 -80px 0;
 }
-
 
 .report-item {
     display: inline-block;
@@ -211,7 +199,6 @@ ul {
     margin: 0 0 80px 0;
     transition: 0.15s linear width;
 }
-
 
 .report-item .front-part {
     display: inline-block;
@@ -223,7 +210,6 @@ ul {
     z-index: 2;
 }
 
-
 .report-item .back-part {
     display: inline-block;
     vertical-align: top;
@@ -233,20 +219,17 @@ ul {
     margin-top: 50px;
 }
 
-
 .report-title {
     color: #f580b7;
     font-size: 1.7em;
     line-height: 1em;
 }
 
-
 .report-subtitle {
     color: white;
     font-size: 1.7em;
     line-height: 1em;
 }
-
 
 .report-author-name {
     color: #a6fcff;
@@ -260,13 +243,16 @@ ul {
     line-height: 3em;
 }
 
+.report-author-name a:hover, .report-author-name a:active, .report-author-name a:focus {
+    color: #67a9f3;
+}
+
 
 .report-description {
     color: #0049ed;
     font-size: 0.6em;
     line-height: 3.33em;
 }
-
 
 .right-side-panel {
     position: fixed;
@@ -281,32 +267,25 @@ ul {
     -webkit-transform: rotate(270deg);
 }
 
-
 .copyright-info li {
     display: inline-block;
     vertical-align: middle;
     color: #0047e6;
     font-size: 0.5em;
     line-height: 1em;
-    margin-left: 35px;
+    margin-left: 30px;
     letter-spacing: 0.8em;
     transition: 0.15s letter-spacing linear;
 }
 
-
 .copyright-info li:first-child {
     margin-left: 0;
-}
-
-#danjii {
-    font-family: "HelveticaNeueCyrMedium";
 }
 
 
 .footer-placeholder {
     height: 140px;
 }
-
 
 .footer {
     text-align: right;
@@ -316,7 +295,6 @@ ul {
     bottom: 55px;
 }
 
-
 .footer-menu li {
     display: inline-block;
     vertical-align: middle;
@@ -325,16 +303,13 @@ ul {
     margin-left: 50px;
 }
 
-
 .footer-menu li:first-child {
     margin-left: 0;
 }
 
-
 .footer-menu li a {
     color: #a6fcff;
 }
-
 
 .footer-menu li a:hover, .footer-menu li a:active, .footer-menu li a:focus {
     color: #326ef3;
@@ -345,7 +320,6 @@ ul {
     position: relative;
     padding-left: 45px;
 }
-
 
 .icon-vk-footer:before, .icon-vk-footer:after {
     content: "";
@@ -358,34 +332,28 @@ ul {
     transition: 0.15s linear opacity;
 }
 
-
 .icon-vk-footer:before {
     background: url("samara_js_images/icon-vk.png") no-repeat 0 0 transparent;
     opacity: 1;
 }
-
 
 .icon-vk-footer:after {
     background: url("samara_js_images/icon-vk-hover.png") no-repeat 0 0 transparent;
     opacity: 0;
 }
 
-
 .icon-vk-footer:hover:before, .icon-vk-footer:active:before, .icon-vk-footer:focus:before {
     opacity: 0;
 }
-
 
 .icon-vk-footer:hover:after, .icon-vk-footer:active:after, .icon-vk-footer:focus:after {
     opacity: 1;
 }
 
-
 .icon-fb-footer {
     position: relative;
     padding-left: 38px;
 }
-
 
 .icon-fb-footer:before, .icon-fb-footer:after {
     content: "";
@@ -398,334 +366,262 @@ ul {
     transition: 0.15s linear opacity;
 }
 
-
 .icon-fb-footer:before {
     background: url("samara_js_images/icon-fb.png") no-repeat 0 0 transparent;
     opacity: 1;
 }
-
 
 .icon-fb-footer:after {
     background: url("samara_js_images/icon-fb-hover.png") no-repeat 0 0 transparent;
     opacity: 0;
 }
 
-
 .icon-fb-footer:hover:before, .icon-fb-footer:active:before, .icon-fb-footer:focus:before {
     opacity: 0;
 }
-
 
 .icon-fb-footer:hover:after, .icon-fb-footer:active:after, .icon-fb-footer:focus:after {
     opacity: 1;
 }
 
-@media (max-height: 550px) {
-    
+@media (max-height: 570px) {
+    .copyright-info li {
+        letter-spacing: 0.7em;
+    }
+}
+
+@media (max-height: 520px) {
     .copyright-info li {
         letter-spacing: 0.6em;
     }
 }
 
 @media (max-height: 490px) {
-    
+    .copyright-info li {
+        letter-spacing: 0.5em;
+    }
+}
+
+@media (max-height: 440px) {
     .copyright-info li {
         letter-spacing: 0.4em;
     }
 }
 
 @media (max-height: 400px) {
-    
     .copyright-info li {
         letter-spacing: 0.2em;
     }
 }
 
 @media (max-height: 330px) {
-    
     .copyright-info li {
         letter-spacing: 0;
     }
 }
 
 @media (min-width: 2000px) {
-    
     body {
-        font-size: 25px;
+        font-size: 22px;
     }
 }
 
 @media (max-width: 1650px) {
-    
     .report-item {
         width: 49.5%;
     }
-
-    
     .header-primary-menu li {
         margin-left: 180px;
     }
 }
 
 @media (max-width: 1500px) {
-    
-    .page-title-wrapper {
-        text-align: left;
-    }
-
-    
     .page-title {
-        margin-left: 0;
-        max-width: none;
+        margin-left: -90px;
     }
 }
 
 @media (max-width: 1200px) {
-    
     body {
-        font-size: 16px;
+        font-size: 14px;
     }
-
-    
     .wrapper {
         padding-top: 40px;
     }
-
-    
     .header-primary-menu li {
         margin-left: 130px;
     }
-
-    
     .page-title-wrapper {
-        padding: 75px 0;
+        padding: 45px 0 75px;
     }
-
-    
+    .page-title{
+        margin-left: -60px;
+    }
     .reports-list {
         margin-bottom: -60px;
     }
-
-    
     .report-item {
         margin-bottom: 60px;
     }
 }
 
 @media (max-width: 950px) {
-    
     body {
-        font-size: 14px;
+        font-size: 12px;
     }
-
-    
     .wrapper {
         padding-left: 7%;
         padding-right: 7%;
     }
-
-    
-    .page-title {
-        font-size: 4.1em;
-    }
-
-    
     .header-primary-menu li {
         margin-left: 100px;
     }
 }
 
 @media (min-width: 768px) {
-    
     .show-in-sm {
         display: none !important;
     }
 }
 
 @media (max-width: 768px) {
-    
     .show-in-sm {
         display: block !important;
     }
-
-    
     .hidden-in-sm {
         display: none !important;
     }
-
-    
     body {
-        font-size: 12px;
+        font-size: 10px;
     }
-
-    
     .wrapper {
         padding: 25px 6% 0;
     }
-
-    
     .header-primary-menu li {
         display: block;
         margin-left: 0;
         margin-top: 3px;
     }
-
-    
     .header-primary-menu li:first-child {
         margin-top: 0;
     }
-
-    
     .header-secondary-menu li {
         display: block;
         margin-left: 0;
     }
-
-    
     .right-side-panel {
         right: 10px;
     }
-
-    
     .page-title-wrapper {
-        padding: 35px 0;
+        padding: 25px 0 40px;
     }
-
-    
     .reports-list {
         margin-bottom: -25px;
     }
-
-    
     .report-item {
         margin-bottom: 25px;
     }
-
-    
     .report-item .front-part {
         margin-left: 7%;
         margin-right: -107%;
     }
-
-    
     .report-item .back-part {
         margin-top: 23px;
     }
-
-    
     .report-title, .report-subtitle {
         line-height: 1.1em;
     }
-
-    
     .report-description {
         line-height: 2.5em;
     }
-
-    
     .footer-placeholder {
         height: 70px;
     }
-
-    
     .footer {
         text-align: center;
         bottom: 25px;
     }
-
-    
     .footer-menu li {
         margin-left: 35px;
     }
-
-    
     .icon-vk-footer {
         padding-left: 30px;
     }
-
-    
     .icon-vk-footer:before, .icon-vk-footer:after {
         top: -3px;
         width: 22px;
         height: 12px;
     }
-
-    
     .icon-fb-footer {
         padding-left: 25px;
     }
-
-    
     .icon-fb-footer:before, .icon-fb-footer:after {
         top: -4px;
         width: 15px;
         height: 15px;
     }
-}
-
-@media (max-width: 650px) {
-    
-    .page-title {
-        font-size: 3.2em;
-        line-height: 1em;
-    }
-}
-
-@media (max-width: 600px) {
-    
-    .report-item {
-        font-size: 0.8em;
-    }
-}
-
-@media (max-width: 530px) {
-    
-    .report-item {
-        width: auto;
-    }
-}
-
-@media (min-width: 470px) {
-    
-    .show-in-xs {
-        display: none !important;
-    }
-}
-
-@media (max-width: 470px) {
-    
-    .show-in-xs {
-        display: block !important;
-    }
-
-    
-    .hidden-in-xs {
-        display: none !important;
-    }
-
-    
-    .page-title {
-        font-size: 2.8em;
-        line-height: 1em;
-        margin-left: 0;
-        max-width: none;
-    }
-
-    
-    .page-title .bottom-part {
-        margin-top: 0;
-        padding-left: 0;
-    }
-
-    
     .cloud-cafe-logo {
         width: 83px;
         height: 100px;
     }
 }
 
+@media (max-width: 650px) {
+    .page-title {
+        font-size: 3.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-title-wrapper{
+        text-align: left;
+    }
+    .page-title {
+        margin-left: 0;
+        max-width: none;
+        font-size: 3.2em;
+    }
+    .report-item {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 530px) {
+    .report-item {
+        width: auto;
+    }
+}
+
+@media (min-width: 470px) {
+    .show-in-xs {
+        display: none !important;
+    }
+}
+
+@media (max-width: 470px) {
+    .show-in-xs {
+        display: block !important;
+    }
+    .hidden-in-xs {
+        display: none !important;
+    }
+    .page-title {
+        font-size: 2.8em;
+        line-height: 1em;
+        margin-left: 0;
+        max-width: none;
+    }
+    .page-title .bottom-part {
+        margin-top: 0;
+        padding-left: 0;
+    }
+    .cloud-cafe-logo {
+        width: 66px;
+        height: 80px;
+    }
+}
+
 @media (max-width: 350px) {
-    
     .page-title {
         font-size: 2.45em;
     }
@@ -733,10 +629,7 @@ ul {
 
 @media (max-width: 250px) {
     body {
-        font-size: 10px;
-    }
-    .page-title {
-        font-size: 2em;
+        font-size: 8px;
     }
     .cloud-cafe-logo {
         width: 58px;
