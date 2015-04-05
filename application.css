@@ -247,6 +247,10 @@ ul {
     line-height: 3em;
 }
 
+.video {
+    margin-bottom: 1em;
+}
+
 .right-side-panel {
     position: fixed;
     right: 25px;
@@ -400,7 +404,7 @@ ul {
     width: 40px;
     height: 77px;
     left: 0;
-    top: 0px;
+    top: 94px;
     transform: translateX(-100%);
     background: url('samara_js_images/slide-prev.png') 0 0 no-repeat;
     background-size: 100% 100%;
@@ -429,9 +433,9 @@ ul {
     position: absolute;
     width: 40px;
     height: 77px;
-    right: 0px;
+    right: 0;
     transform: translateX(100%) rotate(180deg) ;
-    top: 0px;
+    top: 94px;
     background: url('samara_js_images/slide-prev.png') 0 0 no-repeat;
     background-size: 100% 100%;
     z-index: 100;
