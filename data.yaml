@@ -1,0 +1,196 @@
+meetups:
+  - date: 2019-02-01
+    str_date: 1 февраля
+    number: 6
+    title: первый в этом году и 6 от рождества Христова
+    completed: false
+    talks:
+      - author: Антон Усков
+        title: node.js
+        subtitle: Оптимизация<br> потребления памяти<br> - node.js на диете
+        description: |
+          node<br>
+          javascript<br>
+          node
+      - author: Александр Субботин
+        title: Автоматизация отдела разработки
+        subtitle: Автоматизация отдела разработки
+        description: |
+          Автоматизация<br>
+          отдела<br>
+          разработки
+      - author: Александр Горкунов
+        title: Современные стартер-киты для react
+        subtitle: Современные стартер-киты для react
+        description: |
+          Современные<br>
+          стартер-киты<br>
+          для react
+  - date: 2018-04-19
+    str_date: 19 апреля
+    number: 5
+    completed: true
+    talks:
+      - author: Дмитрий Комалов
+        video: https://www.youtube.com/embed/HZJxgf-30-E
+        title: Рациональный React Native
+        subtitle: Рациональный React Native
+        description: |
+          Рациональный<br>
+          React<br>
+          Native
+      - author: Антон Усков
+        video: https://www.youtube.com/embed/YzYuQMo89fQ
+        title: Обзор серверных фреймворков на node.js
+        subtitle: Обзор серверных фреймворков на node.js
+        description: |
+          Обзор<br>
+          серверных<br>
+          фреймворков<br>
+          на node.js
+
+  - date: 2018-03-02
+    str_date: 02 февраля
+    number: 4
+    completed: true
+    talks:
+      - author: Ирина Шилина
+        video: https://www.youtube.com/embed/mXLqpKnbaLs
+        title: Web Accessibility
+        subtitle: Web Accessibility
+        description: |
+          Web<br>
+          Accessibility
+      - author: Алексей Гурьянов
+        video: https://www.youtube.com/embed/BGF3waLMt_w
+        title: Cerebral - декларативное управление состоянием приложения
+        subtitle: Cerebral - декларативное управление состоянием приложения
+        description: |
+          Cerebral<br>
+          декларативное<br>
+          управление
+      - author: Владимир Малик
+        video: https://www.youtube.com/embed/DKc2lhbXzZg
+        title: Современные Big Data и Machine Learning для чайников.
+        subtitle: Современные Big Data и<br> Machine Learning для чайников.
+        description: |
+          Современные Big Data<br>
+          и Machine Learning<br>
+          для чайников.
+
+  - date: 2016-02-05
+    str_date: 05 февраля
+    number: 3
+    completed: true
+    talks:
+      - author: ПАВЕЛ РОСПУТЬКО
+        video: https://www.youtube.com/embed/kFdNrL6T1qQ
+        title: КАК ПИСАТЬ НА GO БОЛЬШОЙ СЕРВИС НА ПРИМЕРЕ DICE FM
+        subtitle: КАК ПИСАТЬ НА GO БОЛЬШОЙ<br> СЕРВИС НА ПРИМЕРЕ DICE FM
+        description: |
+          КАК ПИСАТЬ<br>
+          НА GO БОЛЬШОЙ<br>
+          СЕРВИС НА ПРИМЕРЕ DICE FM
+      - author: ДЕНИС КОКИН
+        video: https://www.youtube.com/embed/ZOWWVLEbSkM
+        title: GO ПОТОМ SCALA — ПОТОМ JAVA ПОЗНАВАТЕЛЬНАЯ ИСТОРИЯ ИЗ ЖИЗНИ БЕКЕНДЕРОВ
+        subtitle: GO ПОТОМ SCALA — ПОТОМ JAVA ПОЗНАВАТЕЛЬНАЯ ИСТОРИЯ ИЗ ЖИЗНИ БЕКЕНДЕРОВ
+        description: |
+          GO ПОТОМ SCALA<br>
+          — ПОТОМ JAVA<br>
+          ПОЗНАВАТЕЛЬНАЯ ИСТОРИЯ<br>
+          ИЗ ЖИЗНИ БЕКЕНДЕРОВ
+      - author: ВЛАДИМИР МАЛИК
+        video: https://www.youtube.com/embed/I356xccMQq0
+        title: AKKA SCALA — ЧАТ ЗА 30 МИНУТ С ИСПОЛЬЗОВАНИЕМ АКТОРОВ И АКТОРОВ
+        subtitle: AKKA SCALA — ЧАТ ЗА 30 МИНУТ<br> С ИСПОЛЬЗОВАНИЕМ АКТОРОВ И АКТОРОВ
+        description: |
+          AKKA SCALA<br>
+          — ЧАТ ЗА 30 МИНУТ<br>
+          С ИСПОЛЬЗОВАНИЕМ АКТОРОВ<br>
+          И АКТОРОВ
+      - author: КИРИЛЛ СОТНИКОВ
+        video: https://www.youtube.com/embed/_yO_nJ-EHek
+        title: ОБЛАЧНЫЙ CODEDELIVERY — ИСПОЛЬЗОВАНИЕ AWS CLOUDFORMATION, AWS CODEDEPLOY И CIRCLECE
+        subtitle: ОБЛАЧНЫЙ CODEDELIVERY — ИСПОЛЬЗОВАНИЕ<br> AWS CLOUDFORMATION, AWS CODEDEPLOY И CIRCLECE
+        description: |
+          ОБЛАЧНЫЙ CODEDELIVERY<br>
+          — ИСПОЛЬЗОВАНИЕ AWS CLOUDFORMATION,<br>
+          AWS CODEDEPLOY И CIRCLECE
+
+  - date: 2015-08-21
+    str_date: 21 августа
+    number: 2
+    completed: true
+    talks:
+      - author: Александр Субботин
+        video: https://www.youtube.com/embed/IDgr3jJII3Q
+        title: N простых способов улучшить взаимодействие с пользователем
+        subtitle: N простых способов улучшить взаимодействие с пользователем
+        description: |
+          N простых<br>
+          способов улучшить<br>
+          взаимодействие с пользователем
+      - author: Владимир Малик
+        video: https://www.youtube.com/embed/F6-6SjPJRZs
+        title: Современный фронтенд за 30 минут
+        subtitle: Современный фронтенд за 30 минут
+        description: |
+          Современный фронтенд<br>
+          за 30 минут
+      - author: Филипп Андрейчев
+        video: https://www.youtube.com/embed/X4OEFOaP46g
+        title: Беседы о react и redux
+        subtitle: Беседы о react и redux
+        description: |
+          Беседы о react<br>
+          и redux
+
+  - date: 2015-03-21
+    str_date: 21 марта
+    title: первый среди первых
+    number: 1
+    completed: true
+    talks:
+      - video: https://www.youtube.com/embed/si_z_aCszC8
+        author: Cергей Гулин
+        title: Angular.js
+        subtitle: Философский взгляд<br>  на angular.js
+        description: |
+          Философские рассуждения<br>
+          о подходе к<br>
+          разработке на angular.js
+
+      - video: https://www.youtube.com/embed/W9tSqfqA2zU
+        author: Илья Абламонов
+        title: Angular.js
+        subtitle: |
+          к вопросу
+          <br>
+          о производитель&shy;ности
+          <br>
+          утюга с экраном
+        description: |
+          1. сделать приложение для SmartTV.<br>
+          2. сделать хорошее приложение для SmartTV<br>
+          3. выйти из депрессии
+      - video: https://www.youtube.com/embed/smz3QIlpCc4
+        author: Александр Горкунов
+        link: http://github.com/gorkunov
+        title: angular+pjax
+        subtitle: Angular<br> + PJAX
+        description: |
+          Angular PJAX Angular Angular PJAX
+          PJAX PJAX PJAX Angular PJAX Angular
+          Angular Angular Angular Angular PJAX
+      - video: https://www.youtube.com/embed/YfkIfg-lAy0
+        title: Ionic Framework
+        subtitle: Пора писать<br> гибридные мобильные приложения
+        link: https://www.youtube.com/embed/tlVwKg_yNCk
+        name: Владимир Ярцев
+        description: |
+          Короткий рассказ о том, насколько
+          легко писать мобильные приложения,
+          зная лишь AngularJS и основы HTML.
+          Впечатления от использования Ionic Framework,
+          область применения и подводные камни.

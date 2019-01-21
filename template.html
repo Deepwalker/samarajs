@@ -4,9 +4,9 @@
   <!-- /todo add meta -->
   <meta charset='utf-8'>
   <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-  <title>SamaraJS - конференция фронтенд разработчиков - 2019-02-01</title>
-  <meta name="description" content="SamaraJS - конференция фронтенд разработчиков в Самаре, 2019-02-01.">
-  <meta property="og:title" content="SamaraJS - фронтенд конференция 2019-02-01."/>
+  <title>SamaraJS - конференция фронтенд разработчиков - {{ date }}</title>
+  <meta name="description" content="SamaraJS - конференция фронтенд разработчиков в Самаре, {{ date }}.">
+  <meta property="og:title" content="SamaraJS - фронтенд конференция {{ date }}."/>
   <meta name="keywords" content="SamaraJS конференция фронтенд javascript html html5 css WebGL webkit presto">
 
   <link href="owl.carousel.css" media="all" rel="stylesheet"/>
@@ -39,35 +39,21 @@
   <div class='header'>
     <ul class='header-primary-menu pull-left'>
       <li>
-      
+      {% if completed %}
+        состоялась
+      {% else %}
         состоится
-      
-        1 февраля
+      {% endif %}
+        {{ str_date }}
       </li>
       <li class="pink-color">
         а также были samarajs #
       </li>
-      
+      {% for meetup in meetups if meetup.completed %}
       <li>
-           <a href="date-2018-04-19.html">5</a>
+           <a href="date-{{ meetup.date }}.html">{{ meetup.number }}</a>
       </li>
-      
-      <li>
-           <a href="date-2018-03-02.html">4</a>
-      </li>
-      
-      <li>
-           <a href="date-2016-02-05.html">3</a>
-      </li>
-      
-      <li>
-           <a href="date-2015-08-21.html">2</a>
-      </li>
-      
-      <li>
-           <a href="date-2015-03-21.html">1</a>
-      </li>
-      
+      {% endfor %}
       <!--
       <li class='size-sm show-in-sm'>
         <a href='https://vk.com/mycloudcafe' target='_blank' title='Cloud Cafe'>vk.com/mycloudcafe</a>
@@ -110,66 +96,29 @@
 
       <div class='reports-list owl-carousel owl-theme-' id="slideshow-owl" >
 
-        
+        {% for talk in talks %}
         <div class='report-item'>
-          
+          {% if talk.video %}
+          <div class="video">
+            <iframe width="304" height="171" src="{{ talk.video }}" frameborder="0" allowfullscreen></iframe>
+          </div>
+          {% endif %}
           <div class='top-part'>
-            <div class='report-title'>node.js</div>
+            <div class='report-title'>{{ talk.title }}</div>
             <div class='report-subtitle'>
-              &mdash; Оптимизация<br> потребления памяти<br> - node.js на диете
+              &mdash; {{ talk.subtitle }}
             </div>
-            <div class='report-author-name'>Антон Усков</div>
+            <div class='report-author-name'>{{ talk.author }}</div>
           </div>
           <div class='bottom-part'>
             <div class='report-description'>
-              node<br>
-javascript<br>
-node
-
+              {{ talk.description }}
             </div>
           </div>
         </div>
-        
-        <div class='report-item'>
-          
-          <div class='top-part'>
-            <div class='report-title'>Автоматизация отдела разработки</div>
-            <div class='report-subtitle'>
-              &mdash; Автоматизация отдела разработки
-            </div>
-            <div class='report-author-name'>Александр Субботин</div>
-          </div>
-          <div class='bottom-part'>
-            <div class='report-description'>
-              Автоматизация<br>
-отдела<br>
-разработки
+        {% endfor %}
 
-            </div>
-          </div>
-        </div>
-        
-        <div class='report-item'>
-          
-          <div class='top-part'>
-            <div class='report-title'>Современные стартер-киты для react</div>
-            <div class='report-subtitle'>
-              &mdash; Современные стартер-киты для react
-            </div>
-            <div class='report-author-name'>Александр Горкунов</div>
-          </div>
-          <div class='bottom-part'>
-            <div class='report-description'>
-              Современные<br>
-стартер-киты<br>
-для react
-
-            </div>
-          </div>
-        </div>
-        
-
-        
+        {% if not completed %}
         <div class='report-item'>
           <div class="video">
             <img width="304" height="171" src="samara_js_images/speaker.png" alt=""/>
@@ -187,7 +136,7 @@ node
             </div>
           </div>
         </div>
-        
+        {% endif %}
 
       </div>
     </div>

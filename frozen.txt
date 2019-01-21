@@ -1,0 +1,3 @@
+jinja2==2.10         # jinja2 << requirements file
+markupsafe==1.1.0    # MarkupSafe>=0.23 << jinja2 << requirements file
+pyyaml==3.13         # pyyaml << requirements file
