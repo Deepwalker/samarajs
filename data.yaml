@@ -26,6 +26,12 @@ meetups:
           Современные<br>
           стартер-киты<br>
           для react
+      - author: Николай Шарапов
+        title: Loopback 3 и 4
+        subtitle: The Node.js API Framework
+        description: |
+          Обзор, сравнение версий<br>
+          опыт использования
   - date: 2018-04-19
     str_date: 19 апреля
     number: 5
