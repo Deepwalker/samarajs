@@ -78,10 +78,6 @@
         <div class="video">
           <iframe width="304" height="171" src="{{ talk.video }}" frameborder="0" allowfullscreen></iframe>
         </div>
-        {% else %}
-        <div class="video">
-          <img width="304" height="171" src="samara_js_images/speaker.png" alt=""/>
-        </div>
         {% endif %}
         <div class="top-part">
           <div class="report-title">{{ talk.title }}</div>
@@ -100,9 +96,6 @@
 
       {% if not completed %}
       <div class="report-item">
-        <div class="video">
-          <img width="304" height="171" src="samara_js_images/speaker.png" alt=""/>
-        </div>
         <div class="top-part">
           <div class="report-title">Я</div>
           <div class="report-subtitle">
