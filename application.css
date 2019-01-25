@@ -202,6 +202,7 @@ ul {
     display: inline-block;
     vertical-align: top;
     width: 32%;
+    min-width: 320px;
     margin: 0 0 80px 0;
     padding: 0 40px;
     transition: 0.15s linear width;
@@ -380,117 +381,6 @@ ul {
 .icon-fb-footer:hover:after, .icon-fb-footer:active:after, .icon-fb-footer:focus:after {
     opacity: 1;
 }
-
-/*slideshow*/
-
-.slideshow-wrapper{
-    position: relative;
-}
-
-/*.cycle-carousel-wrap{*/
-  /*width: 100%;*/
-/*}*/
-.owl-carousel{
-    margin-bottom: 0 !important;
-}
-
-.owl-item .report-item{
-    width: auto;
-    margin-bottom: 0;
-}
-
-.prev-slide{
-    position: absolute;
-    width: 40px;
-    height: 77px;
-    left: 0;
-    top: 94px;
-    transform: translateX(-100%);
-    background: url('samara_js_images/slide-prev.png') 0 0 no-repeat;
-    background-size: 100% 100%;
-    z-index: 100;
-    cursor: pointer;
-}
-.prev-slide:before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
-    opacity: 0;
-    background: url('samara_js_images/slide-prev-active.png') 0 0 no-repeat;
-    background-size: 100% 100%;
-    transition: 0.15s opacity linear;
-}
-
-.prev-slide:hover:before{
-    opacity: 1;
-}
-
-.next-slide {
-    position: absolute;
-    width: 40px;
-    height: 77px;
-    right: 0;
-    transform: translateX(100%) rotate(180deg) ;
-    top: 94px;
-    background: url('samara_js_images/slide-prev.png') 0 0 no-repeat;
-    background-size: 100% 100%;
-    z-index: 100;
-    cursor: pointer;
-}
-
-.next-slide:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
-    opacity: 0;
-    background: url('samara_js_images/slide-prev-active.png') 0 0 no-repeat;
-    background-size: 100% 100%;
-    transition: 0.15s opacity linear;
-}
-
-.next-slide:hover:before {
-    opacity: 1;
-}
-
-.owl-pagination{
-    position: relative;
-    z-index: 100;
-    display: inline-block;
-    top: 83px;
-}
-
-.owl-page{
-    display: inline-block;
-    vertical-align: middle;
-    background: #0043d9;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin-left: 15px;
-    cursor: pointer;
-    transition: 0.15s linear background;
-    text-align: left;
-    text-indent: -1000px;
-    overflow: hidden;
-}
-
-.owl-page:first-child{
-    margin-left: 0;
-}
-
-.owl-page.active{
-    background: #97e8f0;
-}
-
-
 
 @media (max-height: 570px) {
     .copyright-info li {
