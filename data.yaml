@@ -89,68 +89,84 @@ meetups:
     number: 3
     completed: true
     talks:
-      - author: ПАВЕЛ РОСПУТЬКО
-        video: https://www.youtube.com/embed/kFdNrL6T1qQ
-        title: КАК ПИСАТЬ НА GO БОЛЬШОЙ СЕРВИС НА ПРИМЕРЕ DICE FM
-        subtitle: КАК ПИСАТЬ НА GO БОЛЬШОЙ<br> СЕРВИС НА ПРИМЕРЕ DICE FM
-        description: |
-          КАК ПИСАТЬ<br>
-          НА GO БОЛЬШОЙ<br>
-          СЕРВИС НА ПРИМЕРЕ DICE FM
-      - author: ДЕНИС КОКИН
+      - author: Денис Кокин
         video: https://www.youtube.com/embed/ZOWWVLEbSkM
-        title: GO ПОТОМ SCALA — ПОТОМ JAVA ПОЗНАВАТЕЛЬНАЯ ИСТОРИЯ ИЗ ЖИЗНИ БЕКЕНДЕРОВ
-        subtitle: GO ПОТОМ SCALA — ПОТОМ JAVA ПОЗНАВАТЕЛЬНАЯ ИСТОРИЯ ИЗ ЖИЗНИ БЕКЕНДЕРОВ
+        title: Go<br>потом Scala<br>потом Java
+        subtitle: познавательная история<br>из жизни бекендеров
         description: |
-          GO ПОТОМ SCALA<br>
-          — ПОТОМ JAVA<br>
-          ПОЗНАВАТЕЛЬНАЯ ИСТОРИЯ<br>
-          ИЗ ЖИЗНИ БЕКЕНДЕРОВ
-      - author: ВЛАДИМИР МАЛИК
-        video: https://www.youtube.com/embed/I356xccMQq0
-        title: AKKA SCALA — ЧАТ ЗА 30 МИНУТ С ИСПОЛЬЗОВАНИЕМ АКТОРОВ И АКТОРОВ
-        subtitle: AKKA SCALA — ЧАТ ЗА 30 МИНУТ<br> С ИСПОЛЬЗОВАНИЕМ АКТОРОВ И АКТОРОВ
+          Go Scala<br>
+          Go Go Go&shy; Scala<br>
+          Javaaaaaaaaaaika        
+      - author: Павел Роспутько
+        video: https://www.youtube.com/embed/kFdNrL6T1qQ
+        title: Go<br> и снова Go
+        subtitle: |
+          как писать на Go<br>
+          большой сервис<br>
+          на примере dice.fm
         description: |
-          AKKA SCALA<br>
-          — ЧАТ ЗА 30 МИНУТ<br>
-          С ИСПОЛЬЗОВАНИЕМ АКТОРОВ<br>
-          И АКТОРОВ
-      - author: КИРИЛЛ СОТНИКОВ
+          Go Go<br>
+          Go Go Go&shy; Go<br>
+          Gooo-ooo-ooo-ooo
+      - author: Кирилл Сотников
         video: https://www.youtube.com/embed/_yO_nJ-EHek
-        title: ОБЛАЧНЫЙ CODEDELIVERY — ИСПОЛЬЗОВАНИЕ AWS CLOUDFORMATION, AWS CODEDEPLOY И CIRCLECE
-        subtitle: ОБЛАЧНЫЙ CODEDELIVERY — ИСПОЛЬЗОВАНИЕ<br> AWS CLOUDFORMATION, AWS CODEDEPLOY И CIRCLECE
+        title: Облачный CodeDelivery
+        subtitle: |
+          использование<br>
+          AWS Cloudformation, AWS CodeDeploy и CircleCI
         description: |
-          ОБЛАЧНЫЙ CODEDELIVERY<br>
-          — ИСПОЛЬЗОВАНИЕ AWS CLOUDFORMATION,<br>
-          AWS CODEDEPLOY И CIRCLECE
+          Облачный CodeDelivery с использованием AWS Cloudformation, AWS CodeDeploy и CircleCI
+      - author: Владимир Малик
+        video: https://www.youtube.com/embed/I356xccMQq0
+        title: Akka<br> Scala
+        subtitle: |
+          чат за 30 минут<br>
+          с использованием акторов<br>
+          и акторов
+        description: |
+          Akka Scala<br>
+          over&shy; Scala
+          <br>Scala Scala Scala Scala
 
   - date: 2015-08-21
     str_date: 21 августа
     number: 2
     completed: true
     talks:
-      - author: Александр Субботин
-        video: https://www.youtube.com/embed/IDgr3jJII3Q
-        title: N простых способов улучшить взаимодействие с пользователем
-        subtitle: N простых способов улучшить взаимодействие с пользователем
-        description: |
-          N простых<br>
-          способов улучшить<br>
-          взаимодействие с пользователем
       - author: Владимир Малик
         video: https://www.youtube.com/embed/F6-6SjPJRZs
         title: Современный фронтенд за 30 минут
-        subtitle: Современный фронтенд за 30 минут
+        subtitle: |
+          webpack<br>
+          react&shy; jspm<br>
+          gulp grunt
         description: |
-          Современный фронтенд<br>
-          за 30 минут
+          webpack<br>
+          react&shy; jspm<br>
+          gulp grunt blabla пыщ пыщ и все-все-все
       - author: Филипп Андрейчев
         video: https://www.youtube.com/embed/X4OEFOaP46g
-        title: Беседы о react и redux
-        subtitle: Беседы о react и redux
+        title: React, Redux
+        subtitle: |
+          React<br>
+          + Redux<br>
+          или «редуцируй это»
         description: |
-          Беседы о react<br>
-          и redux
+          React Redux React React Redux
+          Redux Redux Redux React Redux React
+          React React React React Redux
+      - author: Александр Субботин
+        video: https://www.youtube.com/embed/IDgr3jJII3Q
+        title: N простых способов<br> улучшить взаимодействие с пользователем
+        subtitle: |
+          приемы улучшения<br>
+          небольшие&shy; и побольше
+        description: |
+          Способ первый<br>
+          способ&shy; второй<br>
+          способ четыреста первый,<br>
+          самый потрясающий<br>
+          <i>и в качестве бонуса<br> рецепт самогона из табуретки</i>
 
   - date: 2015-03-21
     str_date: 21 марта
