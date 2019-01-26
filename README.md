@@ -3,7 +3,7 @@
 ### Setup
 
 ```
-pip install -r generate/frozen.txt
+pip install -r frozen.txt
 ```
 
 ### Edit
