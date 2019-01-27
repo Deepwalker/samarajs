@@ -1,0 +1,6 @@
+generate
+.*
+frozen.txt
+now.json
+README.md
+requirements.txt
