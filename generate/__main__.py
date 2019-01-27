@@ -4,7 +4,11 @@ import jinja2
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-env = jinja2.Environment(loader=jinja2.FileSystemLoader(dir_path))
+env = jinja2.Environment(
+    loader=jinja2.FileSystemLoader(dir_path),
+    trim_blocks=True,
+    lstrip_blocks=True,
+    )
 template = env.get_template('template.html')
 
 meetups = yaml.load(open(os.path.join(dir_path, 'data.yaml')))['meetups']

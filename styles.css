@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Fira Sans ExtraLight'), local('FiraSans-ExtraLight'), url('/fonts/fira-sans-v8-latin_cyrillic-200.woff2') format('woff2'), url('/fonts/fira-sans-v8-latin_cyrillic-200.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fira Sans Regular'), local('FiraSans-Regular'), url('/fonts/fira-sans-v8-latin_cyrillic-regular.woff2') format('woff2'), url('/fonts/fira-sans-v8-latin_cyrillic-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Fira Sans Bold'), local('FiraSans-Bold'), url('/fonts/fira-sans-v8-latin_cyrillic-700.woff2') format('woff2'), url('/fonts/fira-sans-v8-latin_cyrillic-700.woff') format('woff');
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 1em 2em;
+    font-weight: 400;
+    color: #000;
+}
+
+nav, header, footer {
+    text-align: center;
+}
+
+h1, h2, h3, p {
+    margin: 0.5em 0 0.25em 0;
+}
+
+h1, h2, h3 {
+    font-weight: 200;
+}
+
+em {
+    font-style: normal;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid #aaa;
+    height: 1.02em;
+    margin-bottom: 0.18em;
+    display: inline-block;
+}
+
+time {
+    white-space: nowrap;
+}
+
+nav, footer {
+    font-size: 1em;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li:not(:last-child)::after {
+    display: inline;
+    content: ' • ';
+    font-weight: 200;
+}
+
+main ul {
+    padding: 0;
+    list-style: none;
+}
+
+main li {
+    margin: 4em 0;
+    clear: both;
+}
+
+main li::after {
+    content: ' ';
+    display: block;
+    font-weight: 200;
+    font-size: 1.5em;
+    text-align: center;
+    clear: both;
+}
+
+@media only screen and (min-width: 768px) {
+    main aside {
+        float: left;
+    }
+    main li.with-aside h2, main li.with-aside p {
+        margin-left: 336px;
+    }
+}

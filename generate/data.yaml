@@ -1,224 +1,163 @@
 meetups:
   - date: 2019-02-01
-    str_date: 1 февраля
+    time: "18:30"
+    place: |
+      в коворкинге
+      <a href="http://yellowrockets.com/cw/">YellowRockets</a>
+      по адресу Ново-Садовая 23
+    str_date: 1 февраля 2019
     number: 6
-    title: первый в этом году и 6 от рождества Христова
+    title: первый в этом году и шестой от рождества Христова
     completed: false
     talks:
       - author: Антон Усков
+        author_link: https://github.com/uskov-anton
         title: node.js
-        subtitle: Оптимизация<br> потребления памяти<br> - node.js на диете
+        subtitle: Оптимизация потребления памяти - node.js на диете
         description: |
-          Берем node.js и добавляем koa.<br>
-          Заправляем NoSQL и заворачиваем<br>
-          в docker-контейнер. Нагружаем и<br>
-          смотрим, что из этого получится.<br>
+          Берем node.js и добавляем koa.<br/>
+          Заправляем NoSQL и заворачиваем в docker-контейнер.<br/>
+          Нагружаем и смотрим, что из этого получится.<br/>
           Делюсь рецептами того, как не надо делать.
       - author: Александр Субботин
+        author_link: https://github.com/kelion
         title: Автоматизация отдела разработки
-        subtitle: Автоматизация отдела разработки
-        description: |
-          Автоматизация<br>
-          отдела<br>
-          разработки
       - author: Александр Горкунов
-        title: Современные стартер-киты для react
-        subtitle: Современные стартер-киты для react
-        description: |
-          Современные<br>
-          стартер-киты<br>
-          для react
+        author_link: http://github.com/gorkunov
+        title: Современные стартер-киты для React
       - author: Николай Шарапов
+        author_link: 
         title: Loopback 3 и 4
         subtitle: The Node.js API Framework
         description: |
-          В 2019 году есть очень много рецептов,<br>
-          как "приготовить" nodejs. Но нужно ли<br>
-          в 2019 году что-то готовить? На примере<br>
-          современного фреймворка loopback<br>
-          попробуем найти ряд заклинаний, которые<br>
-          приготовят всё за нас.
+          В 2019 году есть очень много рецептов, как "приготовить" nodejs.
+          Но нужно ли в 2019 году что-то готовить?<br/>
+          На примере современного фреймворка loopback попробуем найти
+          ряд заклинаний, которые приготовят всё за нас.
   - date: 2018-04-19
-    str_date: 19 апреля
+    str_date: 19 апреля 2018
     number: 5
     completed: true
     talks:
       - author: Дмитрий Комалов
+        author_link: https://github.com/Komalov
         video: https://www.youtube.com/embed/HZJxgf-30-E
         title: Рациональный React Native
-        subtitle: Рациональный React Native
-        description: |
-          Рациональный<br>
-          React<br>
-          Native
       - author: Антон Усков
+        author_link: https://github.com/uskov-anton
         video: https://www.youtube.com/embed/YzYuQMo89fQ
-        title: Обзор серверных фреймворков на node.js
-        subtitle: Обзор серверных фреймворков на node.js
-        description: |
-          Обзор<br>
-          серверных<br>
-          фреймворков<br>
-          на node.js
+        title: Обзор серверных фреймворков на Node.js
 
   - date: 2018-03-02
-    str_date: 02 февраля
+    str_date: 02 февраля 2018
     number: 4
     completed: true
     talks:
       - author: Ирина Шилина
+        author_link: 
         video: https://www.youtube.com/embed/mXLqpKnbaLs
         title: Web Accessibility
-        subtitle: Web Accessibility
-        description: |
-          Web<br>
-          Accessibility
       - author: Алексей Гурьянов
+        author_link: https://github.com/guria
         video: https://www.youtube.com/embed/BGF3waLMt_w
         title: Cerebral - декларативное управление состоянием приложения
-        subtitle: Cerebral - декларативное управление состоянием приложения
-        description: |
-          Cerebral<br>
-          декларативное<br>
-          управление
       - author: Владимир Малик
+        author_link: https://github.com/vladimir-malyk
         video: https://www.youtube.com/embed/DKc2lhbXzZg
         title: Современные Big Data и Machine Learning для чайников.
-        subtitle: Современные Big Data и<br> Machine Learning для чайников.
-        description: |
-          Современные Big Data<br>
-          и Machine Learning<br>
-          для чайников.
 
   - date: 2016-02-05
-    str_date: 05 февраля
+    str_date: 05 февраля 2016
     number: 3
     completed: true
     talks:
       - author: Денис Кокин
+        author_link: https://github.com/coquin
         video: https://www.youtube.com/embed/ZOWWVLEbSkM
-        title: Go<br>потом Scala<br>потом Java
-        subtitle: познавательная история<br>из жизни бекендеров
+        title: Go потом Scala потом Java
+        subtitle: познавательная история из жизни бекендеров
         description: |
-          Go Scala<br>
-          Go Go Go&shy; Scala<br>
-          Javaaaaaaaaaaika        
+          Go Scala<br/>
+          Go Go Go Scala<br/>
+          Javaaaaaaaaaaika<br/>
       - author: Павел Роспутько
+        author_link: https://github.com/marty-stranger
         video: https://www.youtube.com/embed/kFdNrL6T1qQ
-        title: Go<br> и снова Go
+        title: Go и снова Go
         subtitle: |
-          как писать на Go<br>
-          большой сервис<br>
-          на примере dice.fm
+          как писать на Go  большой сервис на примере dice.fm
         description: |
-          Go Go<br>
-          Go Go Go&shy; Go<br>
+          Go Go<br/>
+          Go Go Go Go<br/>
           Gooo-ooo-ooo-ooo
       - author: Кирилл Сотников
+        author_link: https://github.com/lowl4tency
         video: https://www.youtube.com/embed/_yO_nJ-EHek
         title: Облачный CodeDelivery
         subtitle: |
-          использование<br>
-          AWS Cloudformation, AWS CodeDeploy и CircleCI
-        description: |
-          Облачный CodeDelivery с использованием AWS Cloudformation, AWS CodeDeploy и CircleCI
+          использование AWS Cloudformation, AWS CodeDeploy и CircleCI
       - author: Владимир Малик
+        author_link: https://github.com/vladimir-malyk
         video: https://www.youtube.com/embed/I356xccMQq0
-        title: Akka<br> Scala
+        title: Akka  Scala
         subtitle: |
-          чат за 30 минут<br>
-          с использованием акторов<br>
-          и акторов
+          чат за 30 минут с использованием акторов и акторов
         description: |
-          Akka Scala<br>
-          over&shy; Scala
-          <br>Scala Scala Scala Scala
+          Akka Scala<br/>
+          over Scala<br/>
+          Scala Scala Scala Scala
 
   - date: 2015-08-21
-    str_date: 21 августа
+    str_date: 21 августа 2015
     number: 2
     completed: true
     talks:
       - author: Владимир Малик
+        author_link: https://github.com/vladimir-malyk
         video: https://www.youtube.com/embed/F6-6SjPJRZs
         title: Современный фронтенд за 30 минут
-        subtitle: |
-          webpack<br>
-          react&shy; jspm<br>
-          gulp grunt
-        description: |
-          webpack<br>
-          react&shy; jspm<br>
-          gulp grunt blabla пыщ пыщ и все-все-все
+        subtitle: webpack, react, jspm, gulp grunt blabla пыщ пыщ и все-все-все
       - author: Филипп Андрейчев
+        author_link: https://github.com/andreychev
         video: https://www.youtube.com/embed/X4OEFOaP46g
         title: React, Redux
-        subtitle: |
-          React<br>
-          + Redux<br>
-          или «редуцируй это»
-        description: |
-          React Redux React React Redux
-          Redux Redux Redux React Redux React
-          React React React React Redux
+        subtitle: React + Redux или «редуцируй это»
       - author: Александр Субботин
+        author_link: https://github.com/kelion
         video: https://www.youtube.com/embed/IDgr3jJII3Q
-        title: N простых способов<br> улучшить взаимодействие с пользователем
-        subtitle: |
-          приемы улучшения<br>
-          небольшие&shy; и побольше
-        description: |
-          Способ первый<br>
-          способ&shy; второй<br>
-          способ четыреста первый,<br>
-          самый потрясающий<br>
-          <i>и в качестве бонуса<br> рецепт самогона из табуретки</i>
+        title: N простых способов  улучшить взаимодействие с пользователем
+        subtitle: приемы улучшения, небольшие и побольше
 
   - date: 2015-03-21
-    str_date: 21 марта
+    str_date: 21 марта 2015
     title: первый среди первых
     number: 1
     completed: true
     talks:
-      - video: https://www.youtube.com/embed/si_z_aCszC8
-        author: Cергей Гулин
+      - author: Cергей Гулин
+        author_link: https://github.com/GulinSS
+        video: https://www.youtube.com/embed/si_z_aCszC8
         title: Angular.js
-        subtitle: Философский взгляд<br>  на angular.js
-        description: |
-          Философские рассуждения<br>
-          о подходе к<br>
-          разработке на angular.js
-
-      - video: https://www.youtube.com/embed/W9tSqfqA2zU
-        author: Илья Абламонов
+        subtitle: Философские рассуждения о подходе к разработке на Angular.js
+      - author: Илья Абламонов
+        author_link: https://github.com/Flamefork
+        video: https://www.youtube.com/embed/W9tSqfqA2zU
         title: Angular.js
-        subtitle: |
-          к вопросу
-          <br>
-          о производитель&shy;ности
-          <br>
-          утюга с экраном
+        subtitle: К вопросу о производительности утюга с экраном
         description: |
-          1. сделать приложение для SmartTV.<br>
-          2. сделать хорошее приложение для SmartTV<br>
+          1. сделать приложение для SmartTV.<br/>
+          2. сделать хорошее приложение для SmartTV<br/>
           3. выйти из депрессии
-      - video: https://www.youtube.com/embed/smz3QIlpCc4
-        author: Александр Горкунов
-        link: http://github.com/gorkunov
-        title: angular+pjax
-        subtitle: Angular<br> + PJAX
-        description: |
-          Angular PJAX Angular Angular PJAX
-          PJAX PJAX PJAX Angular PJAX Angular
-          Angular Angular Angular Angular PJAX
-      - video: https://www.youtube.com/embed/YfkIfg-lAy0
+      - author: Александр Горкунов
+        author_link: http://github.com/gorkunov
+        video: https://www.youtube.com/embed/smz3QIlpCc4
+        title: Angular + PJAX
+      - author: Владимир Ярцев
+        author_link: https://github.com/vovayartsev
+        video: https://www.youtube.com/embed/YfkIfg-lAy0
         title: Ionic Framework
-        subtitle: Пора писать<br> гибридные мобильные приложения
-        link: https://www.youtube.com/embed/tlVwKg_yNCk
-        name: Владимир Ярцев
+        subtitle: Пора писать гибридные мобильные приложения
         description: |
-          Короткий рассказ о том, насколько
-          легко писать мобильные приложения,
-          зная лишь AngularJS и основы HTML.
-          Впечатления от использования Ionic Framework,
-          область применения и подводные камни.
+          Короткий рассказ о том, насколько легко писать мобильные приложения,
+          зная лишь AngularJS и основы HTML.<br/>
+          Впечатления от использования Ionic Framework, область применения и подводные камни.

@@ -1,226 +1,111 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-  <!-- /todo add meta -->
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>SamaraJS - конференция фронтенд разработчиков - 2019-02-01</title>
-  <meta name="description" content="SamaraJS - конференция фронтенд разработчиков в Самаре, 2019-02-01.">
-  <meta property="og:title" content="SamaraJS - фронтенд конференция 2019-02-01."/>
-  <meta name="keywords" content="SamaraJS конференция фронтенд javascript html html5 css WebGL webkit presto">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SamaraJS - конференция фронтенд разработчиков в Самаре, 1 февраля 2019.">
+  <meta property="og:title" content="SamaraJS - фронтенд конференция 1 февраля 2019." />
 
-  <link href="application.css?body=1" media="all" rel="stylesheet"/>
+  <title>SamaraJS - конференция фронтенд разработчиков - 1 февраля 2019</title>
 
-  <!-- /todo add favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" type="text/css" href="/styles.css">
 </head>
+
 <body>
-<div class="wrapper main-bg">
-  <div class="header">
-    <ul class="header-primary-menu pull-left">
-      <li>
-      
-        состоится
-      
-        1 февраля
-      </li>
-      <li class="pink-color">
-        а также были samarajs #
-      </li>
-      
-      <li>
-           <a href="date-2018-04-19.html">5</a>
-      </li>
-      
-      <li>
-           <a href="date-2018-03-02.html">4</a>
-      </li>
-      
-      <li>
-           <a href="date-2016-02-05.html">3</a>
-      </li>
-      
-      <li>
-           <a href="date-2015-08-21.html">2</a>
-      </li>
-      
-      <li>
-           <a href="date-2015-03-21.html">1</a>
-      </li>
-      
+
+  <nav>
+    <ul>
+      <li><a href="https://samarajsin.herokuapp.com/">Slack</a></li>
+      <li><a href="https://vk.com/samarajs">ВКонтакте</a></li>
+      <li><a href="https://www.facebook.com/groups/781796485233473/">Facebook</a></li>
+      <li><a href="https://github.com/Deepwalker/samarajs/">GitHub</a></li>
     </ul>
-  </div>
-  <div class="content">
-    <div class="page-title-wrapper">
-      <h1 class="page-title">
-            <span class="top-part">
-              Samara
-              <br class="hidden-in-xs">
-              JS:
-            </span>
-            <span class="bottom-part">
-              Технологии
-              <br>
-              современного
-              <br>
-              фронтенда
-            </span>
-      </h1>
-    </div>
+    <ul>
+      <li><em><time datetime="2019-02-01">1 февраля 2019</time></em></li>
+      <li><a href="/date-2018-04-19.html"><time datetime="2018-04-19">19 апреля 2018</time></a></li>
+      <li><a href="/date-2018-03-02.html"><time datetime="2018-03-02">02 февраля 2018</time></a></li>
+      <li><a href="/date-2016-02-05.html"><time datetime="2016-02-05">05 февраля 2016</time></a></li>
+      <li><a href="/date-2015-08-21.html"><time datetime="2015-08-21">21 августа 2015</time></a></li>
+      <li><a href="/date-2015-03-21.html"><time datetime="2015-03-21">21 марта 2015</time></a></li>
+    </ul>
+  </nav>
 
-    <div class="reports-list">
+  <header>
+    <h1>
+      <em>Samara JS</em>: Технологии современного фронтенда
+    </h1>
 
-      
-      <div class="report-item">
-        
-        <div class="top-part">
-          <div class="report-title">node.js</div>
-          <div class="report-subtitle">
-            &mdash; Оптимизация<br> потребления памяти<br> - node.js на диете
-          </div>
-          <div class="report-author-name">Антон Усков</div>
-        </div>
-        <div class="bottom-part">
-          <div class="report-description">
-            Берем node.js и добавляем koa.<br>
-Заправляем NoSQL и заворачиваем<br>
-в docker-контейнер. Нагружаем и<br>
-смотрим, что из этого получится.<br>
+    <p>
+      первый в этом году и шестой от рождества Христова митап состоится      <em><time datetime="2019-02-01 18:30">1 февраля 2019 в 18:30</time></em>
+<br/>в коворкинге
+<a href="http://yellowrockets.com/cw/">YellowRockets</a>
+по адресу Ново-Садовая 23
+    </p>
+  </header>
+
+  <main>
+    <ul>
+      <li class="">
+        <h2>
+          <a href="https://github.com/uskov-anton">Антон Усков</a>:
+          <em>node.js</em>
+        </h2>
+        <p>Оптимизация потребления памяти - node.js на диете</p>
+        <p>Берем node.js и добавляем koa.<br/>
+Заправляем NoSQL и заворачиваем в docker-контейнер.<br/>
+Нагружаем и смотрим, что из этого получится.<br/>
 Делюсь рецептами того, как не надо делать.
-
-          </div>
-        </div>
-      </div>
-      
-      <div class="report-item">
-        
-        <div class="top-part">
-          <div class="report-title">Автоматизация отдела разработки</div>
-          <div class="report-subtitle">
-            &mdash; Автоматизация отдела разработки
-          </div>
-          <div class="report-author-name">Александр Субботин</div>
-        </div>
-        <div class="bottom-part">
-          <div class="report-description">
-            Автоматизация<br>
-отдела<br>
-разработки
-
-          </div>
-        </div>
-      </div>
-      
-      <div class="report-item">
-        
-        <div class="top-part">
-          <div class="report-title">Современные стартер-киты для react</div>
-          <div class="report-subtitle">
-            &mdash; Современные стартер-киты для react
-          </div>
-          <div class="report-author-name">Александр Горкунов</div>
-        </div>
-        <div class="bottom-part">
-          <div class="report-description">
-            Современные<br>
-стартер-киты<br>
-для react
-
-          </div>
-        </div>
-      </div>
-      
-      <div class="report-item">
-        
-        <div class="top-part">
-          <div class="report-title">Loopback 3 и 4</div>
-          <div class="report-subtitle">
-            &mdash; The Node.js API Framework
-          </div>
-          <div class="report-author-name">Николай Шарапов</div>
-        </div>
-        <div class="bottom-part">
-          <div class="report-description">
-            В 2019 году есть очень много рецептов,<br>
-как "приготовить" nodejs. Но нужно ли<br>
-в 2019 году что-то готовить? На примере<br>
-современного фреймворка loopback<br>
-попробуем найти ряд заклинаний, которые<br>
-приготовят всё за нас.
-
-          </div>
-        </div>
-      </div>
-      
-
-      
-      <div class="report-item">
-        <div class="top-part">
-          <div class="report-title">Я</div>
-          <div class="report-subtitle">
-            &mdash; Тоже хочу поделиться<br> своим опытом разработки
-          </div>
-          <div class="report-author-name"><a href="mailto:krivushinme@gmail.com">Место свободно</a></div>
-        </div>
-        <div class="bottom-part">
-          <div class="report-description">
-            Мы пока не решили, когда будет следующая встреча, но она будет, и было бы круто услышать вас
-          </div>
-        </div>
-      </div>
-      
-
-    </div>
-  </div>
-
-  <div class="right-side-panel">
-    <ul class="copyright-info">
-      <li>
-        <a href="https://vk.com/danjii" class="font-medium" target="_blank" title="Design by Danjii">design by danjii</a>
+</p>
       </li>
-      <li>
-        Copyright © Deepwalker 2015
+      <li class="">
+        <h2>
+          <a href="https://github.com/kelion">Александр Субботин</a>:
+          <em>Автоматизация отдела разработки</em>
+        </h2>
+        <p></p>
+        <p></p>
+      </li>
+      <li class="">
+        <h2>
+          <a href="http://github.com/gorkunov">Александр Горкунов</a>:
+          <em>Современные стартер-киты для React</em>
+        </h2>
+        <p></p>
+        <p></p>
+      </li>
+      <li class="">
+        <h2>
+          Николай Шарапов:
+          <em>Loopback 3 и 4</em>
+        </h2>
+        <p>The Node.js API Framework</p>
+        <p>В 2019 году есть очень много рецептов, как "приготовить" nodejs.
+Но нужно ли в 2019 году что-то готовить?<br/>
+На примере современного фреймворка loopback попробуем найти
+ряд заклинаний, которые приготовят всё за нас.
+</p>
       </li>
     </ul>
-  </div>
-  <div class="footer-placeholder"></div>
-  <div class="footer">
+  </main>
 
-    <ul class="footer-menu">
-      <li>
-        <a class="icon-vk-footer" href="https://vk.com/samarajs" target="_blank" title="Vkontakte link">vkontakte</a>
-      </li>
-      <li>
-        <a class="icon-fb-footer" href="https://www.facebook.com/groups/781796485233473/" target="_blank"
-           title="Facebook link">facebook</a>
-      </li>
-    </ul>
-  </div>
-</div>
-<script type="text/javascript" src="js/application.js"></script>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <footer>
+    Copyright © Deepwalker 2019
+    &nbsp;•&nbsp;
+    Нашел ошибку — присылай
+    <a href="https://github.com/Deepwalker/samarajs/">pull request</a>
+  </footer>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-4644907-4', 'auto');
     ga('send', 'pageview');
-</script>
+  </script>
 </body>
+
 </html>

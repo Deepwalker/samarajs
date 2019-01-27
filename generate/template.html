@@ -1,151 +1,90 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-  <!-- /todo add meta -->
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>SamaraJS - конференция фронтенд разработчиков - {{ date }}</title>
-  <meta name="description" content="SamaraJS - конференция фронтенд разработчиков в Самаре, {{ date }}.">
-  <meta property="og:title" content="SamaraJS - фронтенд конференция {{ date }}."/>
-  <meta name="keywords" content="SamaraJS конференция фронтенд javascript html html5 css WebGL webkit presto">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SamaraJS - конференция фронтенд разработчиков в Самаре, {{ str_date }}.">
+  <meta property="og:title" content="SamaraJS - фронтенд конференция {{ str_date }}." />
 
-  <link href="application.css?body=1" media="all" rel="stylesheet"/>
+  <title>SamaraJS - конференция фронтенд разработчиков - {{ str_date }}</title>
 
-  <!-- /todo add favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" type="text/css" href="/styles.css">
 </head>
+
 <body>
-<div class="wrapper main-bg">
-  <div class="header">
-    <ul class="header-primary-menu pull-left">
-      <li>
-      {% if completed %}
-        состоялась
+
+  <nav>
+    <ul>
+      <li><a href="https://samarajsin.herokuapp.com/">Slack</a></li>
+      <li><a href="https://vk.com/samarajs">ВКонтакте</a></li>
+      <li><a href="https://www.facebook.com/groups/781796485233473/">Facebook</a></li>
+      <li><a href="https://github.com/Deepwalker/samarajs/">GitHub</a></li>
+    </ul>
+    <ul>
+      {% for meetup in meetups %}
+      {% if meetup.number == number %}
+      <li><em><time datetime="{{ meetup.date }}">{{ meetup.str_date }}</time></em></li>
       {% else %}
-        состоится
+      <li><a href="/{% if loop.index != 1 %}date-{{ meetup.date }}.html{% endif %}"><time datetime="{{ meetup.date }}">{{ meetup.str_date }}</time></a></li>
       {% endif %}
-        {{ str_date }}
-      </li>
-      <li class="pink-color">
-        а также были samarajs #
-      </li>
-      {% for meetup in meetups if meetup.completed %}
-      <li>
-           <a href="date-{{ meetup.date }}.html">{{ meetup.number }}</a>
-      </li>
       {% endfor %}
     </ul>
-  </div>
-  <div class="content">
-    <div class="page-title-wrapper">
-      <h1 class="page-title">
-            <span class="top-part">
-              Samara
-              <br class="hidden-in-xs">
-              JS:
-            </span>
-            <span class="bottom-part">
-              Технологии
-              <br>
-              современного
-              <br>
-              фронтенда
-            </span>
-      </h1>
-    </div>
+  </nav>
 
-    <div class="reports-list">
+  <header>
+    <h1>
+      <em>Samara JS</em>: Технологии современного фронтенда
+    </h1>
 
+    <p>
+      {{ title }} митап {% if completed %}состоялся{% else %}состоится{% endif %}
+      <em><time datetime="{{ date }} {{ time }}">{{ str_date }} в {{ time }}</time></em>
+      {% if place %}<br/>{{ place }}{% endif %}
+    </p>
+  </header>
+
+  <main>
+    <ul>
       {% for talk in talks %}
-      <div class="report-item">
+      <li class="{% if talk.video %} with-aside {% endif %}">
         {% if talk.video %}
-        <div class="video">
+        <aside>
           <iframe width="304" height="171" src="{{ talk.video }}" frameborder="0" allowfullscreen></iframe>
-        </div>
+        </aside>
         {% endif %}
-        <div class="top-part">
-          <div class="report-title">{{ talk.title }}</div>
-          <div class="report-subtitle">
-            &mdash; {{ talk.subtitle }}
-          </div>
-          <div class="report-author-name">{{ talk.author }}</div>
-        </div>
-        <div class="bottom-part">
-          <div class="report-description">
-            {{ talk.description }}
-          </div>
-        </div>
-      </div>
+        <h2>
+          {% if talk.author_link %}
+          <a href="{{ talk.author_link }}">{{ talk.author }}</a>:
+          {% else %}
+          {{ talk.author }}:
+          {% endif %}
+          <em>{{ talk.title }}</em>
+        </h2>
+        <p>{{ talk.subtitle }}</p>
+        <p>{{ talk.description }}</p>
+      </li>
       {% endfor %}
-
-      {% if not completed %}
-      <div class="report-item">
-        <div class="top-part">
-          <div class="report-title">Я</div>
-          <div class="report-subtitle">
-            &mdash; Тоже хочу поделиться<br> своим опытом разработки
-          </div>
-          <div class="report-author-name"><a href="mailto:krivushinme@gmail.com">Место свободно</a></div>
-        </div>
-        <div class="bottom-part">
-          <div class="report-description">
-            Мы пока не решили, когда будет следующая встреча, но она будет, и было бы круто услышать вас
-          </div>
-        </div>
-      </div>
-      {% endif %}
-
-    </div>
-  </div>
-
-  <div class="right-side-panel">
-    <ul class="copyright-info">
-      <li>
-        <a href="https://vk.com/danjii" class="font-medium" target="_blank" title="Design by Danjii">design by danjii</a>
-      </li>
-      <li>
-        Copyright © Deepwalker 2015
-      </li>
     </ul>
-  </div>
-  <div class="footer-placeholder"></div>
-  <div class="footer">
+  </main>
 
-    <ul class="footer-menu">
-      <li>
-        <a class="icon-vk-footer" href="https://vk.com/samarajs" target="_blank" title="Vkontakte link">vkontakte</a>
-      </li>
-      <li>
-        <a class="icon-fb-footer" href="https://www.facebook.com/groups/781796485233473/" target="_blank"
-           title="Facebook link">facebook</a>
-      </li>
-    </ul>
-  </div>
-</div>
-<script type="text/javascript" src="js/application.js"></script>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <footer>
+    Copyright © Deepwalker 2019
+    &nbsp;•&nbsp;
+    Нашел ошибку — присылай
+    <a href="https://github.com/Deepwalker/samarajs/">pull request</a>
+  </footer>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-4644907-4', 'auto');
     ga('send', 'pageview');
-</script>
+  </script>
 </body>
+
 </html>
