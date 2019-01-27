@@ -17,3 +17,10 @@ pip install -r frozen.txt
 ```
 python -m generate
 ```
+
+### Update on file change
+
+Install [entr](http://eradman.com/entrproject/), then
+```
+find ./* | entr python -m generate
+```
