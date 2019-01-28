@@ -110,6 +110,7 @@ main aside iframe,
 main aside div {
     width: 304px;
     height: 171px;
+    background-color: #ccc;
 }
 
 main aside iframe {
@@ -117,7 +118,6 @@ main aside iframe {
 }
 
 main aside div {
-    background-color: #ccc;
     background-size: cover;
     background-position: center 10%;
 }

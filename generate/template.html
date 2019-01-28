@@ -50,7 +50,7 @@
       <li class="{% if talk.video or talk.author_photo %}with-aside{% endif %}">
         {% if talk.video %}
         <aside>
-          <iframe src="{{ talk.video }}" allowfullscreen></iframe>
+          <iframe src="{{ talk.video }}" allowfullscreen allowtransparency></iframe>
         </aside>
         {% elif talk.author_photo %}
         <aside>
