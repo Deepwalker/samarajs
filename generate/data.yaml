@@ -7,11 +7,12 @@ meetups:
       по адресу Ново-Садовая 23
     str_date: 1 февраля 2019
     number: 6
-    title: первый в этом году и шестой от рождества Христова
+    title: первый в этом году и шестой от сотворения мира
     completed: false
     talks:
       - author: Антон Усков
         author_link: https://github.com/uskov-anton
+        author_photo: https://avatars2.githubusercontent.com/u/5119734
         title: node.js
         subtitle: Оптимизация потребления памяти - node.js на диете
         description: |
@@ -21,12 +22,15 @@ meetups:
           Делюсь рецептами того, как не надо делать.
       - author: Александр Субботин
         author_link: https://github.com/kelion
+        author_photo: https://avatars1.githubusercontent.com/u/594298
         title: Автоматизация отдела разработки
       - author: Александр Горкунов
         author_link: http://github.com/gorkunov
+        author_photo: https://pp.userapi.com/c625822/v625822596/1f440/l48kEMzVQ7E.jpg
         title: Современные стартер-киты для React
       - author: Николай Шарапов
-        author_link: 
+        author_link: https://github.com/NikolasMelui
+        author_photo: https://pp.userapi.com/c846221/v846221522/7ff2c/2lc0y7p45OQ.jpg
         title: Loopback 3 и 4
         subtitle: The Node.js API Framework
         description: |
@@ -34,6 +38,7 @@ meetups:
           Но нужно ли в 2019 году что-то готовить?<br/>
           На примере современного фреймворка loopback попробуем найти
           ряд заклинаний, которые приготовят всё за нас.
+  
   - date: 2018-04-19
     str_date: 19 апреля 2018
     number: 5

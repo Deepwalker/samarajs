@@ -106,6 +106,22 @@ main li::after {
     clear: both;
 }
 
+main aside iframe,
+main aside div {
+    width: 304px;
+    height: 171px;
+}
+
+main aside iframe {
+    border: 0;
+}
+
+main aside div {
+    background-color: #ccc;
+    background-size: cover;
+    background-position: center 10%;
+}
+
 @media only screen and (min-width: 768px) {
     main aside {
         float: left;

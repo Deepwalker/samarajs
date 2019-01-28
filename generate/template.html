@@ -39,7 +39,7 @@
 
     <p>
       {{ title }} митап {% if completed %}состоялся{% else %}состоится{% endif %}
-      <em><time datetime="{{ date }} {{ time }}">{{ str_date }} в {{ time }}</time></em>
+      <em><time datetime="{{ date }} {{ time }}">{{ str_date }}{% if not completed %} в {{ time }}{% endif %}</time></em>
       {% if place %}<br/>{{ place }}{% endif %}
     </p>
   </header>
@@ -47,10 +47,14 @@
   <main>
     <ul>
       {% for talk in talks %}
-      <li class="{% if talk.video %} with-aside {% endif %}">
+      <li class="{% if talk.video or talk.author_photo %}with-aside{% endif %}">
         {% if talk.video %}
         <aside>
-          <iframe width="304" height="171" src="{{ talk.video }}" frameborder="0" allowfullscreen></iframe>
+          <iframe src="{{ talk.video }}" allowfullscreen></iframe>
+        </aside>
+        {% elif talk.author_photo %}
+        <aside>
+          <div style="background-image: url('{{ talk.author_photo }}');"></div>
         </aside>
         {% endif %}
         <h2>
