@@ -24,7 +24,7 @@ meetups:
         author_link: https://github.com/kelion
         author_photo: https://avatars1.githubusercontent.com/u/594298
         title: Автоматизация отдела разработки
-        description: /
+        description: |
           Что нужно для взаимозаменяемости разработчиков? Как разработчику освободить голову от рутины и начать решать проблемы бизнеса?
       - author: Александр Горкунов
         author_link: http://github.com/gorkunov
