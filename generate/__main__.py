@@ -14,9 +14,14 @@ template = env.get_template('template.html')
 meetups = yaml.load(open(os.path.join(dir_path, 'data.yaml')))['meetups']
 
 for i, meetup in enumerate(meetups):
+    if i == 0:
+        meetup['filename'] = 'index.html'
+        meetup['link'] = '/'
+    else:
+        meetup['filename'] = f'date-{meetup["date"]}.html'
+        meetup['link'] = f'/{meetup["filename"]}'
+
+for i, meetup in enumerate(meetups):
     render = template.render(**meetup, i=i, meetups=meetups)
-    with open(os.path.join(dir_path, '..', f"date-{meetup['date']}.html"), 'w') as f:
+    with open(os.path.join(dir_path, '..', meetup['filename']), 'w') as f:
         f.write(render)
-    if not meetup['completed']:
-        with open(os.path.join(dir_path, '..', "index.html"), "w") as f:
-            f.write(render)
