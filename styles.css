@@ -130,3 +130,12 @@ main aside div {
         margin-left: 336px;
     }
 }
+
+@media only screen and (max-width: 320px) {
+    body {
+        margin: 1em 0.5em;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+}
