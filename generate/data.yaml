@@ -8,11 +8,12 @@ meetups:
     str_date: 1 февраля 2019
     number: 6
     title: первый в этом году и шестой от сотворения мира
-    completed: false
+    completed: true
     talks:
       - author: Антон Усков
         author_link: https://github.com/uskov-anton
         author_photo: https://avatars2.githubusercontent.com/u/5119734
+        video: https://www.youtube.com/embed/aciQ5zhxJiU
         title: node.js
         subtitle: Оптимизация потребления памяти - node.js на диете
         description: |
@@ -23,6 +24,7 @@ meetups:
       - author: Александр Субботин
         author_link: https://github.com/kelion
         author_photo: https://avatars1.githubusercontent.com/u/594298
+        video: https://www.youtube.com/embed/-2VQoEv9zt4
         title: Автоматизация отдела разработки
         description: |
           Что нужно для взаимозаменяемости разработчиков?<br/>
@@ -30,10 +32,12 @@ meetups:
       - author: Александр Горкунов
         author_link: http://github.com/gorkunov
         author_photo: https://pp.userapi.com/c625822/v625822596/1f440/l48kEMzVQ7E.jpg
+        video: https://www.youtube.com/embed/BFzuYPNUkCA
         title: Современные стартер-киты для React
       - author: Николай Сладкий
         author_link: https://github.com/NikolasMelui
         author_photo: https://pp.userapi.com/c846221/v846221522/7ff2c/2lc0y7p45OQ.jpg
+        video: https://www.youtube.com/embed/cAz_VeqJy78
         title: Loopback 3 и 4
         subtitle: The Node.js API Framework
         description: |
