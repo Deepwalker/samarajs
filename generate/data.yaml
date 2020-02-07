@@ -154,7 +154,7 @@ meetups:
       - author: Илья Абламонов
         author_link: https://github.com/Flamefork
         video: https://www.youtube.com/embed/W9tSqfqA2zU
-        title: Angular.js
+        title: SmartTV
         subtitle: К вопросу о производительности утюга с экраном
         description: |
           1. сделать приложение для SmartTV.<br/>
